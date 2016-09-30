@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HangManGame</title>
+</head>
+<body>
+<h1>Hangman</h1> <a href="/instructions">Instructions</a>
+<hr>
+Word = {{#word}}{{.}}&nbsp{{/word}}<br>
+<pre>
+     {{v1}}{{v2}}
+    {{v3}}{{v4}}{{v5}}{{v6}}
+     {{v7}}{{v8}}
+     {{v9}}{{v10}}
+</pre>
+Enter a letter <br>
+<form action="/post" method="post">
+    <input type="text" placeholder="Enter a letter" name="letter"/>
+    <button type="submit">Enter</button>
+</form>
+
+{{winner}}
+You have {{guesses}} guesses left!!
+{{lose}}
+
+
+
+</body>
+</html>
